@@ -1,0 +1,21 @@
+<nav class="navbar bg-light" data-bs-theme="dark" data-cy="navbar">
+  <div class="container d-flex justify-content-between">
+    <a class="navbar-brand link-primary" href="#">
+      <img data-cy="logo" ngSrc="assets/img/code-cake.png" alt="Codecake" width="30" height="24">
+      Speech to notion docs
+    </a>
+    <div>
+      <button class="btn btn-link" (click)="switchLanguage('en')">English</button>
+      <button class="btn btn-link" (click)="switchLanguage('fr')">Francais</button>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-3"></div>
+  </div>
+</div>
